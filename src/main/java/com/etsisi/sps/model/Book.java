@@ -30,8 +30,6 @@ public class Book implements Serializable {
     private String title;
 
 
-
-
     /*@NumberFormat(style = NumberFormat.Style.NUMBER)*/
     //@Pattern(regexp = "\\d+",message = "mal")
     @NotNull //@Price

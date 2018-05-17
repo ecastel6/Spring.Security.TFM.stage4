@@ -2,8 +2,6 @@ package com.etsisi.sps.service;
 
 import com.etsisi.sps.model.User;
 import com.etsisi.sps.model.UserRoles;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -16,16 +14,17 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 @Service("customUserDetailsService")
 public class CustomUserDetailsService implements UserDetailsService {
-
 	static final Logger logger = LoggerFactory.getLogger(CustomUserDetailsService.class);
-	
 	@Autowired
 	private UserService userService;
-	
-	@Transactional(readOnly=true)
+
+    @Transactional(readOnly=true)
 	public UserDetails loadUserByUsername(String username)
 			throws UsernameNotFoundException {
 		User user = userService.findByUsername(username);

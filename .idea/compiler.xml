@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Spring.Security.TFM.stage4" />
+        <module name="injection.fixed.stage4" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Spring.Security.TFM.stage4" target="1.7" />
+      <module name="injection.fixed.stage4" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -99,10 +99,12 @@
 				<div class="form-actions floatRight">
 					<c:choose>
 						<c:when test="${edit}">
-							<input type="submit" value="Update" class="btn btn-primary btn-sm"/> or <a href="<c:url value='/users/list' />">Cancel</a>
+                            <input type="submit" value="Update" class="btn btn-primary btn-sm"/> or <a
+                                href="<c:url value='/users' />">Cancel</a>
 						</c:when>
 						<c:otherwise>
-							<input type="submit" value="Register" class="btn btn-primary btn-sm"/> or <a href="<c:url value='/users/list' />">Cancel</a>
+                            <input type="submit" value="Register" class="btn btn-primary btn-sm"/> or <a
+                                href="<c:url value='/users' />">Cancel</a>
 						</c:otherwise>
 					</c:choose>
 				</div>

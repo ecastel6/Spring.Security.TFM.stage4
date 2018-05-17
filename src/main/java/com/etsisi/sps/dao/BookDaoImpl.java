@@ -37,7 +37,7 @@ public class BookDaoImpl extends AbstractDao<Integer, Book> implements BookDao {
 
     @Override
     public void update(Book book) {
-        logger.info("updateBook : {}", book.getId());
+        logger.info("updateBook : {}", book.toString());
         update(book);
 
     }

@@ -50,12 +50,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 //		http.csrf().disable();
 //	}
 
-	@Autowired
-	@Qualifier("customUserDetailsService")
-	UserDetailsService userDetailsService;
+	private final String customUserDetailsService = "customUserDetailsService";
 
 	@Autowired
 	PersistentTokenRepository tokenRepository;
+	@Autowired
+	@Qualifier(customUserDetailsService)
+	UserDetailsService userDetailsService;
 
 	@Autowired
 	public void configureGlobalSecurity(AuthenticationManagerBuilder auth) throws Exception {

@@ -148,7 +148,7 @@ public class UsersController {
 			return "registration";
 		}*/
 
-
+        logger.info(String.format("calling userService.updateUser(%s)", username));
 		userService.updateUser(user);
 
 		model.addAttribute("success", "User " + user.getFirstName() + " "+ user.getLastName() + " updated successfully");

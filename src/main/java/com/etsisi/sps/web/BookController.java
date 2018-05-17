@@ -43,7 +43,7 @@ public class BookController
     // list page
     @RequestMapping(value = "/books", method = RequestMethod.GET)
     public String showAllBooks(Model model) {
-        logger.debug("BookList()");
+        logger.info("BookList()");
         model.addAttribute("books", bookService.findAll());
         return "books/list";
     }
@@ -63,7 +63,7 @@ public class BookController
         } else {
             redirectAttributes.addFlashAttribute("css", "success");
             if (book.isNew()) {
-                logger.info ("book.isNew true");
+                logger.info("book.isNew = true");
                 redirectAttributes.addFlashAttribute("msg", "Book added successfully!");
             } else {
                 logger.info ("BookController.saveOrUpdateBook.isNew false");
@@ -195,8 +195,8 @@ public class BookController
     @ExceptionHandler(EmptyResultDataAccessException.class)
     public ModelAndView handleEmptyData(HttpServletRequest req, Exception ex) {
 
-        logger.debug("handleEmptyData()");
-        logger.error("Request: {}, error ", req.getRequestURL(), ex);
+        logger.info("handleEmptyData()");
+        logger.info("Request: {}, error ", req.getRequestURL(), ex);
 
         ModelAndView model = new ModelAndView();
         model.setViewName("book/show");
