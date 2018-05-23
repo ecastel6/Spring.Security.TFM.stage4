@@ -30,9 +30,9 @@
                         <td class="col-md-3">
                             <sec:authorize access="hasRole('ADMIN')">
                             <a href="<c:url value='/users/edit-user-${user.username}' />"
-                               class="btn btn-warning custom-width">edit</a>
+                               class="btn btn-warning custom-width">Edit</a>
                             <a href="<c:url value='/users/delete-user-${user.username}' />"
-                               class="btn btn-danger custom-width">delete</a>
+                               class="btn btn-danger custom-width">Delete</a>
                             </sec:authorize>
                     </tr>
                 </c:forEach>

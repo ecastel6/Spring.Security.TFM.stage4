@@ -34,7 +34,7 @@
                             <sec:authorize access="hasRole('ADMIN')">
                                     <spring:url value="/books/${book.id}/delete?${_csrf.parameterName}=${_csrf.token}" var="deleteUrl" />
                                     <spring:url value="/books/${book.id}/update" var="updateUrl" />
-                                <button class="btn btn-primary custom-width" onclick="location.href='${updateUrl}'">Update</button>
+                                <button class="btn btn-warning custom-width" onclick="location.href='${updateUrl}'">Edit</button>
                                 <button class="btn btn-danger custom-width" onclick="this.disabled=true;post('${deleteUrl}')">Delete</button>
                             </sec:authorize>
                         </td>
