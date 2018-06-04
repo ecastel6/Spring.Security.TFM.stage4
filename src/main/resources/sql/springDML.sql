@@ -1,7 +1,7 @@
 INSERT INTO users(username, password,firstname,lastname,email, enabled)
-  VALUES ('admin', 'admin', 'Admin name', 'Admin lastname','admin@google.com', 1);
+  VALUES ('admin', '$2a$10$Q5eMt69cTtZCvSHxYNx7VeEWSZ6edRT73UzaQXzU17G67cTXK2A3i', 'Admin name', 'Admin lastname','admin@google.com', 1);
 INSERT INTO users(username, password,firstname,lastname,email, enabled)
-  VALUES ('user', 'user','User name', 'User lastname', 'user@google.com', 1);
+  VALUES ('user', '$2a$10$1W8xvcCIEgDMGCy2su5lBujy0meLU4rObTqOBNCi8pvyHnnyLMUrS','User name', 'User lastname', 'user@google.com', 1);
 
 INSERT INTO user_roles (role) VALUES ('USER');
 INSERT INTO user_roles (role) VALUES ('ADMIN');
