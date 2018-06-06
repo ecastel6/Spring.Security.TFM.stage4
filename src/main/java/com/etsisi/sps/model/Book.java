@@ -29,10 +29,7 @@ public class Book implements Serializable {
     @Column(name = "title", nullable = false)
     private String title;
 
-
-    /*@NumberFormat(style = NumberFormat.Style.NUMBER)*/
-    //@Pattern(regexp = "\\d+",message = "mal")
-    @NotNull //@Price
+    @NotNull
     @Digits(integer = 5, fraction = 2, message="{javax.validation.constraints.Digits.message}")
     @Column(name = "price", nullable = false)
     private String price;
