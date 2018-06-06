@@ -1,5 +1,5 @@
-CREATE DATABASE `websystique.mod` ;
-
+CREATE DATABASE `sps.stage4` IF NOT EXISTS ;
+USE sps.stage4;
 CREATE TABLE `USERS` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `username` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
@@ -35,11 +35,11 @@ CONSTRAINT `FK_APP_USER` FOREIGN KEY (`user_id`) REFERENCES `USERS` (`id`),
 CONSTRAINT `FK_USER_ROLES` FOREIGN KEY (`user_roles_id`) REFERENCES `USER_ROLES` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-INSERT INTO `websystique.mod`.`USERS` (`username`, `password`, `firstname`, `lastname`, `email`) VALUES ('admin', '$2a$10$TZZO2TmOXJ9xGaJRhPrTX.ipiiHkV6rjlVJGB2Bjy9uDnhZ.eyH6O', 'Admin', 'User', 'admin@etsisi.sps.com');
-INSERT INTO `websystique.mod`.`USERS` (`username`, `password`, `firstname`, `lastname`, `email`) VALUES ('user', 'user', 'Regular', 'User', 'user@etsisi.sps.com');
+INSERT INTO `sps.stage4`.`USERS` (`username`, `password`, `firstname`, `lastname`, `email`) VALUES ('admin', '$2a$10$Q5eMt69cTtZCvSHxYNx7VeEWSZ6edRT73UzaQXzU17G67cTXK2A3i', 'Admin', 'User', 'admin@etsisi.sps.com');
+INSERT INTO `sps.stage4`.`USERS` (`username`, `password`, `firstname`, `lastname`, `email`) VALUES ('user', '$2a$10$1W8xvcCIEgDMGCy2su5lBujy0meLU4rObTqOBNCi8pvyHnnyLMUrS', 'Regular', 'User', 'user@etsisi.sps.com');
 
-INSERT INTO `websystique.mod`.`USER_ROLES` (`role`) VALUES ('ADMIN');
-INSERT INTO `websystique.mod`.`USER_ROLES` (`role`) VALUES ('USER');
+INSERT INTO `sps.stage4`.`USER_ROLES` (`role`) VALUES ('ADMIN');
+INSERT INTO `sps.stage4`.`USER_ROLES` (`role`) VALUES ('USER');
 
 INSERT INTO USERS_USER_ROLES (user_id, user_roles_id)
   SELECT u.id, ur.id FROM USERS u, USER_ROLES ur
