@@ -1,7 +1,7 @@
 package com.etsisi.sps.validators;
 
-import com.etsisi.sps.model.Book;
-import com.etsisi.sps.service.BookService;
+import com.etsisi.sps.entities.Book;
+import com.etsisi.sps.services.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;

@@ -1,8 +1,7 @@
-package com.etsisi.sps.service;
+package com.etsisi.sps.services;
 
-import com.etsisi.sps.dao.UserDao;
-import com.etsisi.sps.model.User;
-import com.etsisi.sps.web.UsersController;
+import com.etsisi.sps.daos.UserDao;
+import com.etsisi.sps.entities.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

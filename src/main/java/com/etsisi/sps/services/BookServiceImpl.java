@@ -1,8 +1,7 @@
-package com.etsisi.sps.service;
+package com.etsisi.sps.services;
 
-import com.etsisi.sps.dao.BookDao;
-import com.etsisi.sps.model.Book;
-import com.etsisi.sps.web.BookController;
+import com.etsisi.sps.daos.BookDao;
+import com.etsisi.sps.entities.Book;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package com.etsisi.sps.model;
+package com.etsisi.sps.entities;
 
 import org.hibernate.validator.constraints.NotEmpty;
 
@@ -37,9 +37,10 @@ public class User implements Serializable{
 
 	@NotEmpty
 	@ManyToMany(fetch = FetchType.LAZY)
-	@JoinTable(name = "USERS_USER_ROLES",
+	@JoinTable(/*name = "USERS_USER_ROLES",*/
              joinColumns = { @JoinColumn(name = "USER_ID") }, 
              inverseJoinColumns = { @JoinColumn(name = "USER_ROLES_ID") })
+
 	private Set<UserRoles> userRoles = new HashSet<UserRoles>();
 
 	public Integer getId() {

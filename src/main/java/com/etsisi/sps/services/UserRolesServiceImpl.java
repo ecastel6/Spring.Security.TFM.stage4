@@ -1,7 +1,7 @@
-package com.etsisi.sps.service;
+package com.etsisi.sps.services;
 
-import com.etsisi.sps.dao.UserRoleDao;
-import com.etsisi.sps.model.UserRoles;
+import com.etsisi.sps.daos.UserRoleDao;
+import com.etsisi.sps.entities.UserRoles;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

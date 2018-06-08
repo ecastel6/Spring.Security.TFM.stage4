@@ -1,6 +1,6 @@
-package com.etsisi.sps.dao;
+package com.etsisi.sps.daos;
 
-import com.etsisi.sps.model.Book;
+import com.etsisi.sps.entities.Book;
 import org.hibernate.Criteria;
 import org.hibernate.criterion.Order;
 import org.slf4j.Logger;

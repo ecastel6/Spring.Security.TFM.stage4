@@ -1,7 +1,7 @@
-package com.etsisi.sps.service;
+package com.etsisi.sps.services;
 
-import com.etsisi.sps.model.User;
-import com.etsisi.sps.model.UserRoles;
+import com.etsisi.sps.entities.User;
+import com.etsisi.sps.entities.UserRoles;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

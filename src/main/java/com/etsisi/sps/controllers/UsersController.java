@@ -1,9 +1,9 @@
-package com.etsisi.sps.web;
+package com.etsisi.sps.controllers;
 
-import com.etsisi.sps.model.User;
-import com.etsisi.sps.model.UserRoles;
-import com.etsisi.sps.service.UserRolesService;
-import com.etsisi.sps.service.UserService;
+import com.etsisi.sps.entities.User;
+import com.etsisi.sps.entities.UserRoles;
+import com.etsisi.sps.services.UserRolesService;
+import com.etsisi.sps.services.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

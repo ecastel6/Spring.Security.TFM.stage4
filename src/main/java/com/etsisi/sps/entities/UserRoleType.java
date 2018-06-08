@@ -1,4 +1,4 @@
-package com.etsisi.sps.model;
+package com.etsisi.sps.entities;
 
 import java.io.Serializable;
 

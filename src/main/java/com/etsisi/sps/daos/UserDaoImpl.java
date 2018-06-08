@@ -1,6 +1,6 @@
-package com.etsisi.sps.dao;
+package com.etsisi.sps.daos;
 
-import com.etsisi.sps.model.User;
+import com.etsisi.sps.entities.User;
 import org.hibernate.Criteria;
 import org.hibernate.Hibernate;
 import org.hibernate.criterion.Order;
@@ -40,13 +40,6 @@ public class UserDaoImpl extends AbstractDao<Integer, User> implements UserDao {
 		Criteria criteria = createEntityCriteria().addOrder(Order.asc("firstName"));
 		criteria.setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY);//To avoid duplicates.
 		List<User> users = (List<User>) criteria.list();
-		
-		// No need to fetch userProfiles since we are not showing them on list page. Let them lazy load. 
-		// Uncomment below lines for eagerly fetching of userProfiles if you want.
-		/*
-		for(User user : users){
-			Hibernate.initialize(user.getUserProfiles());
-		}*/
 		return users;
 	}
 

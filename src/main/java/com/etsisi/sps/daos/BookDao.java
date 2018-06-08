@@ -1,10 +1,10 @@
-package com.etsisi.sps.dao;
+package com.etsisi.sps.daos;
 
-import com.etsisi.sps.model.Book;
+import com.etsisi.sps.entities.Book;
 
 import java.util.List;
 
-public interface  BookDao {
+public interface BookDao {
 
     Book findById(Integer id);
 

@@ -1,6 +1,6 @@
-package com.etsisi.sps.service;
+package com.etsisi.sps.services;
 
-import com.etsisi.sps.model.UserRoles;
+import com.etsisi.sps.entities.UserRoles;
 
 import java.util.List;
 

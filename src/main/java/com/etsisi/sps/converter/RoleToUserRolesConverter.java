@@ -1,7 +1,7 @@
 package com.etsisi.sps.converter;
 
-import com.etsisi.sps.model.UserRoles;
-import com.etsisi.sps.service.UserRolesService;
+import com.etsisi.sps.entities.UserRoles;
+import com.etsisi.sps.services.UserRolesService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

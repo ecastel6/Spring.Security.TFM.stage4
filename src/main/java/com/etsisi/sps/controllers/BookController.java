@@ -1,7 +1,7 @@
-package com.etsisi.sps.web;
+package com.etsisi.sps.controllers;
 
-import com.etsisi.sps.model.Book;
-import com.etsisi.sps.service.BookService;
+import com.etsisi.sps.entities.Book;
+import com.etsisi.sps.services.BookService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,7 +35,7 @@ public class BookController
     }
 
     /*@RequestMapping(value = "/", method = RequestMethod.GET)
-    public String index(Model model) {
+    public String index(Model entities) {
         logger.debug("index()");
         return "redirect:/books";
     }*/
@@ -57,7 +57,7 @@ public class BookController
 
         if (result.hasErrors()) {
 /*
-			populateDefaultModel(model);
+			populateDefaultModel(entities);
 */
             return "books/bookform";
         } else {
@@ -98,7 +98,7 @@ public class BookController
 
         model.addAttribute("bookForm", book);
 /*
-		populateDefaultModel(model);
+		populateDefaultModel(entities);
 */
 
         return "books/bookform";
@@ -115,7 +115,7 @@ public class BookController
         model.addAttribute("bookForm", book);
 		
 /*
-		populateDefaultModel(model);
+		populateDefaultModel(entities);
 */
 
         return "books/bookform";
@@ -156,7 +156,7 @@ public class BookController
 
     }
 /*
-	private void populateDefaultModel(Model model) {
+	private void populateDefaultModel(Model entities) {
 
 		List<String> frameworksList = new ArrayList<String>();
 		frameworksList.add("Spring MVC");
@@ -165,7 +165,7 @@ public class BookController
 		frameworksList.add("GWT");
 		frameworksList.add("Play");
 		frameworksList.add("Apache Wicket");
-		model.addAttribute("frameworkList", frameworksList);
+		entities.addAttribute("frameworkList", frameworksList);
 
 		Map<String, String> skill = new LinkedHashMap<String, String>();
 		skill.put("Hibernate", "Hibernate");
@@ -173,7 +173,7 @@ public class BookController
 		skill.put("Struts", "Struts");
 		skill.put("Groovy", "Groovy");
 		skill.put("Grails", "Grails");
-		model.addAttribute("javaSkillList", skill);
+		entities.addAttribute("javaSkillList", skill);
 
 		List<Integer> numbers = new ArrayList<Integer>();
 		numbers.add(1);
@@ -181,14 +181,14 @@ public class BookController
 		numbers.add(3);
 		numbers.add(4);
 		numbers.add(5);
-		model.addAttribute("numberList", numbers);
+		entities.addAttribute("numberList", numbers);
 
 		Map<String, String> country = new LinkedHashMap<String, String>();
 		country.put("US", "United Stated");
 		country.put("CN", "China");
 		country.put("SG", "Singapore");
 		country.put("MY", "Malaysia");
-		model.addAttribute("countryList", country);
+		entities.addAttribute("countryList", country);
 
 	}*/
 

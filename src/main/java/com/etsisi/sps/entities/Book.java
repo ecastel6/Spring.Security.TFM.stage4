@@ -1,10 +1,6 @@
-package com.etsisi.sps.model;
+package com.etsisi.sps.entities;
 
-import com.etsisi.sps.validators.Price;
 import org.hibernate.validator.constraints.NotEmpty;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.MessageSource;
-import org.springframework.format.annotation.NumberFormat;
 
 import javax.persistence.*;
 import javax.validation.constraints.*;

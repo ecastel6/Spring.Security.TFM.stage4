@@ -1,6 +1,6 @@
-package com.etsisi.sps.dao;
+package com.etsisi.sps.daos;
 
-import com.etsisi.sps.model.User;
+import com.etsisi.sps.entities.User;
 
 import java.util.List;
 

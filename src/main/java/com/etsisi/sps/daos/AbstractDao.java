@@ -1,4 +1,4 @@
-package com.etsisi.sps.dao;
+package com.etsisi.sps.daos;
 
 import org.hibernate.Criteria;
 import org.hibernate.Session;

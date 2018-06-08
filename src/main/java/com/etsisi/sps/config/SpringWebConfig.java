@@ -17,7 +17,7 @@ import org.springframework.web.servlet.view.JstlView;
 
 @EnableWebMvc
 @Configuration
-@ComponentScan({ "com.etsisi.sps.web", "com.etsisi.sps.service", "com.etsisi.sps.dao",
+@ComponentScan({"com.etsisi.sps.controllers", "com.etsisi.sps.services", "com.etsisi.sps.daos",
 		"com.etsisi.sps.exception", "com.etsisi.sps.validators","com.etsisi.sps.converter" })
 //@ComponentScan(basePackages="com.etsisi.sps")
 //@Import({ SecurityConfig.class,SpringDBConfig.class })
