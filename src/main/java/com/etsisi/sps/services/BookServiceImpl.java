@@ -51,7 +51,7 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public void saveOrUpdate(Book book) {
-        logger.info ("BookServiceImple.saveOrUpdate  {} ", book.getId());
+        logger.info ("BookServiceImpl saveOrUpdate  {} ", book.getId());
         if (book.getId() == null) {
             logger.info("id es null llamamos a save");
             bookDao.save(book);

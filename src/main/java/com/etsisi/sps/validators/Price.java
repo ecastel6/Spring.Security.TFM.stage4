@@ -3,7 +3,7 @@ package com.etsisi.sps.validators;
 import javax.validation.Constraint;
 import javax.validation.Payload;
 import java.lang.annotation.*;
-//https://github.com/stevehanson/spring-mvc-validation/blob/masterhttps://github.com/stevehanson/spring-mvc-validation
+// https://github.com/stevehanson/spring-mvc-validation
 @Documented
 @Constraint(validatedBy = PriceConstraintValidator.class)
 @Target({ElementType.METHOD, ElementType.FIELD})
